@@ -1,0 +1,270 @@
+/* CSS Document */
+
+body{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: url('img/gradient.jpg');
+    background-size: cover;
+}
+
+/* Header */
+
+header{
+    background: #000000;
+    color: white;
+    padding-top: 5px;
+    min-height: 40px;
+    border-bottom: #1953e4 3px solid;
+    opacity: 0.5;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+header h1 {
+    font-family: fantasy;
+    font-size: 40px;
+    color: blue;
+    margin-left: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+} 
+
+header nav{
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+header a:hover {
+    color: white;
+    border-bottom: white solid;
+   
+}
+
+/* Home */
+
+#home {
+    min-height: 550px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#home h1 {
+    margin-top: 50px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: rgb(11, 170, 184);
+    text-shadow: 5px 5px #000;
+    font-family: fantasy;
+}
+
+#home p{
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-family: cursive;
+}
+
+.content{
+    margin: 20px;
+    flex: 1;
+}
+
+#home img{
+    align-self: center;
+    width: 350px; 
+    height: 350px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    margin: 50px;
+    margin-top: 20px;
+    margin-right: 100px;
+    max-width: 100%; 
+}
+
+#home button{
+    height: 38px;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+#home button:hover {
+    color: white;
+    border-bottom: white solid;
+}
+
+/* About */
+
+#about{
+    min-height: 550px;
+    background: rgb(255, 255, 255, 0.3); 
+    background-size: cover;
+    text-align: center;
+    margin: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 10px;
+}
+
+#about h2 {
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(11, 170, 184);
+    text-shadow: 3px 3px #000;
+    font-family: fantasy;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#about p{
+    font-size: 20px;
+    color: white;
+    font-family: cursive;
+    margin-left: 100px;
+    margin-top: 0;
+    text-align: justify;
+    line-height: 40px;
+}
+
+#about span{
+    font-weight: bold;
+    color: rgb(11, 170, 184);
+    text-transform: capitalize;
+}
+
+/* boxes */
+
+#boxes{
+    margin-top: 20px;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden; 
+}
+
+#boxes .box{
+    float: left;
+    min-height: 370px;
+    min-width: 300px;
+    background: rgb(255, 255, 255, 0.3); 
+    background-size: cover;
+    text-align: center;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#boxes h3 {
+    font-size: 30px;
+    color: rgb(11, 170, 184);
+    text-shadow: 2px 2px #000;
+    font-family: fantasy;
+    margin-bottom: 0;
+}
+
+#boxes p {
+    font-size: 15px;
+    color: white;
+    font-family: cursive;
+    text-shadow: 2px 2px #000;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 0;
+}
+
+#boxes li {
+    font-size: 15px;
+    color: white;
+    font-family: cursive;
+    text-shadow: 2px 2px #000;
+    text-align: justify;
+    margin-top: 0;
+    padding: 5px;
+}
+
+#boxes span {
+    font-weight: bold;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+#sosmed h3 {
+    font-size: 20px;
+    color: white;
+    font-family: cursive;
+}
+
+#sosmed img {
+    width: 50px;
+}
+
+footer{
+    padding: 20px 0px;
+    color: white;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    header nav, header nav li, #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 10px;
+    }
+
+    #home {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #home h1 {
+        margin-top: 40px;
+    }
+    
+    #home img {
+        order: -1; 
+        margin-bottom: 20px;
+        margin: 5px;
+    }
+
+    #about p {
+        margin-left: 20px;
+    }
+
+    #boxes h3 {
+        padding-top: 20px;
+    }
+
+    #boxes .box {
+        box-sizing: border-box;
+        margin: 10px 0; 
+    }
+}
