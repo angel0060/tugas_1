@@ -252,7 +252,10 @@ footer{
     #home img {
         order: -1; 
         margin-bottom: 20px;
+        margin-top: 15px;
         margin: 5px;
+        height: 250px;
+        width: 250px;
     }
 
     #about {
